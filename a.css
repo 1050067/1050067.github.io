@@ -43,6 +43,11 @@ body {
     background-color: #a1a1a8;
 }
 
+.juzhong{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
 @media (min-width: 1280px){
     .content-wrap {
         position: absolute;
@@ -80,6 +85,11 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.width-navi p{
+    text-align: center;
+    margin-top: 6px;
 }
 
 .title img {
@@ -147,11 +157,13 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
 }
 
 .home-description a {
     animation: dongHua 1.5s 1 ease-in-out;
     color:#464646;
+    font-size: 22px;
     }
     @keyframes dongHua {
         0% {
@@ -167,7 +179,16 @@ body {
     width: 100%;
     overflow: hidden;
 }
+
 img {
     border: 0;
     max-width: 100%;
+}
+
+.juzhong a{
+    border-radius: 15px;
+    color: rgba(0,0,0,.5);
+    fill: rgba(0,0,0,.5);
+    background-color: rgb(210 210 210 / 80%);
+    padding: 0 10px;
 }
