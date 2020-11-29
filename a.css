@@ -2,6 +2,10 @@ html {
     font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
 }
 
+body, dd, dl, dt, p {
+    margin: 0;
+}
+
 a {
     color: #161209;
     text-decoration: none;
@@ -13,103 +17,70 @@ a:hover {
     color: #2d96bd;
 }
 
+p {
+    padding-bottom: 4px;
+}
+
 img {
     border-style: none;
 }
 
 body {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 1.5rem;
-    background-color: #fff;
-    color: #161209;
+    line-height: 150%;
+    background-color: #F7F8F3;
+    color: #555555;
     margin: 0;
 }
 
-body::before {
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.05;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
+@media (min-width: 1280px){
+    .content-wrap {
+        position: absolute;
+        top: 100px;
+        max-width: 1260px;
+        margin-top: 0;
+        margin-left: -640px;
+        left: 50%;
+    }
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+@media (min-width: 768px){
+    .width-navi {
+        width: 280px;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #87878d;
+@media (min-width: 768px){
+    nav {
+        padding: 2px;
+        background: #fafafa;
+        -moz-box-shadow: 0px 2px 4px #AAA;
+        -webkit-box-shadow: 0px 2px 4px #AAA;
+        box-shadow: 0px 2px 4px #AAA;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin: 0 16px;
+        width: 244px;
+        position: fixed;
+    }
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #a7a7af;
-}
-
-::selection {
-    background: rgba(38,139,211,0.2);
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 97.5vh;
-    width: 100%;
-}
-
-.wrapper main {
-    flex: 1 0 auto;
-}
-
-main {
-    display: block;
-}
-
-.wrapper main .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.home-intro {
-    transform: translateY(25vh);
+.title {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home-intro .home-avatar {
-    padding: 0.6rem;
-}
-
-.home-intro .home-description {
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0;
-    padding: .4rem;
-}
-
-.home-intro .home-social-links {
-    padding-top: .6rem;
-}
-
-.home-intro .home-avatar img {
+.title img {
     width: 8rem;
     height: auto;
     display: inline-block;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    -webkit-box-shadow: 0 0 0 0.3618em rgba(207 173 232 / 0.5);
-    box-shadow: 0 0 0 0.3618em rgb(207 173 232 / 0.5);
+    -webkit-box-shadow: 0 0 0 0.3618em rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 0.3618em rgba(0,0,0,0.05);
     margin: 0 auto;
     -webkit-transition: all ease 0.4s;
     -moz-transition: all ease 0.4s;
@@ -118,25 +89,60 @@ main {
     cursor: pointer;
 }
 
-.home-intro .home-avatar img:hover {
-    position: relative;
-    -webkit-transform: translateY(-0.75rem);
-    -moz-transform: translateY(-0.75rem);
-    -ms-transform: translateY(-0.75rem);
-    -o-transform: translateY(-0.75rem);
-    transform: translateY(-0.75rem);
-    cursor: pointer;
+@media (min-width: 980px){
+    .width-content {
+        max-width: 640px;
+        margin-left: 280px;
+    }
+}
+
+.content-rank {
+    margin-bottom: 32px;
+    overflow: hidden;
+    height: auto;
+}
+
+@media (min-width: 768px){
+    .content-rank>div {
+        width: 48%;
+        float: left;
+        background-color: #e4e4e4;
+    }
+}
+
+@media (min-width: 768px){
+    .content-rank>div:last-child {
+        margin-top: 0;
+        float: right;
+    }
+}
+
+.content-rank-img {
+    padding: 16px;
+    width: 100%;
+    max-height: 268px;
+    overflow: hidden;
+}
+
+.content-rank-text {
+    padding: 16px;
+}
+
+.home-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-description a {
     animation: dongHua 1.5s 1 ease-in-out;
-    color: #a368be;
-  } 
-  @keyframes dongHua {
-    0% {
-      opacity: 0;
+    color:#464646;
     }
-    100% {
-      opacity: 1;
+    @keyframes dongHua {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
     }
-  }
