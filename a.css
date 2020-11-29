@@ -69,47 +69,6 @@ body::before {
     width: 100%;
 }
 
-.navbar {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 4rem;
-    line-height: 4rem;
-    background-color: #fafafa;
-}
-
-.navbar .navbar-container {
-    width: auto;
-    text-align: center;
-    margin: 0 20rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.bounceIn {
-    -webkit-animation-duration: .75s;
-    animation-duration: .75s;
-    -webkit-animation-name: bounceIn;
-    animation-name: bounceIn;
-}
-
-.navbar .navbar-container .navbar-header a {
-    padding: 0 8px;
-    font-size: 20px;
-}
-
-.navbar .navbar-container .navbar-menu a {
-    padding: 0 8px;
-}
-
 .wrapper main {
     flex: 1 0 auto;
 }
@@ -169,3 +128,14 @@ main {
     cursor: pointer;
 }
 
+.home-description a {
+    animation: dongHua 1.5s 1 ease-in-out;
+  } 
+  @keyframes dongHua {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
