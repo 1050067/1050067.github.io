@@ -120,9 +120,9 @@ article, aside, div, footer, header, p {
 
 .css-wyfp img{
     border: 1px solid #808080;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
     width: 100%;
 }
 
