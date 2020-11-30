@@ -1,0 +1,127 @@
+html {
+    font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
+}
+
+body {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: #F7F8F3;
+    color: #555555;
+    margin: 0;
+}
+
+a {
+    color: #464646;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2d96bd;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #87878d;
+}
+
+.css-main {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 1000px){
+    .css-main {
+        display: block;
+        width: 100%;
+    }
+}
+
+.css-post {
+    max-width: 770px;
+    margin-left: 220px;
+    margin-top: 50px;
+    flex-grow: 1;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 1000px){
+    .css-post {
+        margin: 20px auto auto;
+        width: 100%;
+    }
+}
+.css-aside {
+    position: fixed;
+    margin-top: 50px;
+    width: 220px;
+}
+
+@media screen and (max-width: 1000px){
+    .css-aside {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 5px #bbb;
+        z-index: 9;
+    }
+}
+
+.css-aside h1{
+    text-align: center;
+}
+
+.css-aside h1 a {
+    animation: dongHua 2.5s 1 ease-in-out;
+    color:#464646;
+    font-family: "Noto Serif SC",serif;
+    font-size: 30px;
+    }
+    @keyframes dongHua {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+}
+
+.css-aside h1 a:hover {
+    color: #2d96bd;
+}
+
+.tx{
+    text-align: center;
+}
+
+.tx img{
+    width: 8rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.css-aside p{
+    text-align: center;
+    margin-top: 6px;
+}
+
+.css-wyfp img{
+    border: 1px solid #808080;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.css-wyfp>div{
+    margin-bottom: 20px;
+}
