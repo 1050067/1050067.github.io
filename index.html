@@ -26,12 +26,31 @@ https://qiudedian.com
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
         </style>
-
+       
+        <script> 
+            function aColor(color){
+                document.body.style.background = color;
+            }
+            function betCol(color) {
+				document.body.style.color = color;
+			}
+            function cetCol(color) {
+				document.getElementById("col").style.color = color;
+			}
+        </script> 
     </head>
     <body>
+        <div class="snow-container">
+            <div class="snow foreground"></div>
+            <div class="snow foreground layered"></div>
+            <div class="snow middleground"></div>
+            <div class="snow middleground layered"></div>
+            <div class="snow background"></div>
+            <div class="snow background layered"></div>
+        </div>
         <div class="css-main">
             <aside class="css-aside close">
-                <h1><a href="/">秋の便利店</a></h1>
+                <h1><a href="/" id="col">秋の便利店</a></h1>
                 <div class="tx">
                     <a href="/">
                         <img src="./img/tx.png" alt="avatar" title="别碰我">
@@ -66,6 +85,8 @@ https://qiudedian.com
                 </div>
             </article>
             -->
-        </div>    
+        </div>
+        <div class="flower-toggle personal" onclick="aColor('#555');betCol('#fff');cetCol('#fff');">夜</div>
+        <div class="theme-toggle" onclick="aColor('#F7F8F3');betCol('#555');cetCol('#464646');">白</div>
     </body>
 </html>
