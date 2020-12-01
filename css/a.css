@@ -1,5 +1,5 @@
 html {
-    font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
+    font-family: "Noto Serif SC",serif,-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
 }
 
 
@@ -35,7 +35,6 @@ article, aside, div, footer, header, p {
 }
 
 .css-main {
-    display: flex;
     margin: auto;
     max-width: 1000px;
 }
@@ -81,7 +80,6 @@ article, aside, div, footer, header, p {
 .css-aside h1 a {
     animation: dongHua 2.5s 1 ease-in-out;
     color:#464646;
-    font-family: "Noto Serif SC",serif;
     font-size: 30px;
     }
     @keyframes dongHua {
