@@ -15,10 +15,11 @@ body {
 a {
     color: #464646;
     text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
 }
 
 a:hover {
-    color: #2d96bd;
+    color: #989898;
 }
 
 article, aside, div, footer, header, p {
@@ -61,7 +62,7 @@ article, aside, div, footer, header, p {
     }
 }
 .css-aside {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 1000px){
@@ -92,7 +93,7 @@ article, aside, div, footer, header, p {
 }
 
 .css-aside h1 a:hover {
-    color: #2d96bd;
+    color: #989898;
 }
 
 .tx{
@@ -135,4 +136,3 @@ article, aside, div, footer, header, p {
     background-color: rgb(210 210 210 / 80%);
     padding: 0 10px;
 }
-
