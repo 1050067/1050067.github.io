@@ -2,6 +2,7 @@ html {
     font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
 }
 
+
 body {
     font-size: 12px;
     font-weight: 400;
@@ -61,8 +62,7 @@ article, aside, div, footer, header, p {
     }
 }
 .css-aside {
-    position: fixed;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 @media screen and (max-width: 1000px){
@@ -70,10 +70,6 @@ article, aside, div, footer, header, p {
         position: static;
         top: 0;
         left: 0;
-        margin-top: 0;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 0 5px #bbb;
         z-index: 9;
     }
 }
@@ -141,3 +137,4 @@ article, aside, div, footer, header, p {
     background-color: rgb(210 210 210 / 80%);
     padding: 0 10px;
 }
+
