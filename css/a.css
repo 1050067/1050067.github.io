@@ -216,7 +216,7 @@ article, aside, div, footer, header, p {
     bottom: 62px;
 }
 
-.flower-toggle, .theme-toggle{
+.flower-toggle, .theme-toggle, .yin-toggle, .xue-toggle{
     position: fixed;
     cursor: pointer;
     font-size: 28px;
@@ -226,4 +226,12 @@ article, aside, div, footer, header, p {
 
 .theme-toggle {
     bottom: 18px;
+}
+
+.yin-toggle{
+    bottom: 104px;
+}
+
+.xue-toggle{
+    bottom: 148px;
 }
