@@ -37,10 +37,16 @@ https://qiudedian.com
             function cetCol(color) {
 				document.getElementById("col").style.color = color;
 			}
+            function detCol(color) {
+				document.getElementById("yin").style.display = color;
+			}
+            function eetCol(color) {
+				document.getElementById("yin").style.display = color;
+			}
         </script> 
     </head>
     <body>
-        <div class="snow-container">
+        <div id="yin" class="snow-container">
             <div class="snow foreground"></div>
             <div class="snow foreground layered"></div>
             <div class="snow middleground"></div>
@@ -86,7 +92,9 @@ https://qiudedian.com
             </article>
             -->
         </div>
-        <div class="flower-toggle personal" onclick="aColor('#555');betCol('#fff');cetCol('#fff');">夜</div>
-        <div class="theme-toggle" onclick="aColor('#F7F8F3');betCol('#555');cetCol('#464646');">白</div>
+        <div class="flower-toggle personal" onclick="aColor('#555');betCol('#fff');cetCol('#fff');">月</div>
+        <div class="theme-toggle" onclick="aColor('#F7F8F3');betCol('#555');cetCol('#464646');">日</div>
+        <div class="xue-toggle" onclick="eetCol('block');">雪</div>
+        <div class="yin-toggle" onclick="detCol('none');">隐</div>
     </body>
 </html>
